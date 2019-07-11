@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <title>Compose your order</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <from method="POST">
-    <div id="ing1">
-       <button id="1add" onclick="add1()">+</button>
-       <label>In1</label>
-       <button id="1remove" onclick="remove1()">-</button>
-    </div>
+    <div class="grid-container">
+        <div class="grid-element">
+        <from id="form"method="POST">
+        <h1>Pick your ingridients:</h1>
+        <div id="ing1">
+            <button id="1add" onclick="add1()">+Add</button>
+            <label>Brazilian</label>
+            <button id="1remove" onclick="remove1()">-Remove</button>
+        </div>
     <div id="ing2">
-        <button onclick="add2()">+</button>
-        <label>In2</label>
-        <button onclick="remove2()">-</button>
+        <button onclick="add2()">+Add</button>
+        <label>Pecan</label>
+        <button onclick="remove2()">-Remove</button>
      </div>
      <div id="ing3">
-        <button onclick="add3()">+</button>
-        <label>In3</label>
-        <button onclick="remove3()">-</button>
+        <button onclick="add3()">+Add</button>
+        <label>Macadamia</label>
+        <button onclick="remove3()">-Remove</button>
      </div>
      <div id="ing4">
-        <button onclick="add4()">+</button>
-        <label>In4</label>
-        <button onclick="remove4()">-</button>
+        <button onclick="add4()">+Add</button>
+        <label>Hazel</label>
+        <button onclick="remove4()">-Remove</button>
      </div>
      <button id="submit" onclick="generateOrder()">Submit</button>
     </from>
+    </div>
+    <div class="grid-element">
+    <div class="render-area">
+    <h3>Your order will contain:</h3>
     <div id="display_area">
     </div>
+    </div>
+</div>
+</div>
     <script
 src="https://code.jquery.com/jquery-3.4.1.min.js"
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
